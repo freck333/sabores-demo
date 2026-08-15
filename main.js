@@ -19,7 +19,7 @@
     target.innerHTML = data.menu.map(m => `
       <article class="card has-tilt" data-reveal>
         <div class="card-img"><img src="${escHTML(m.photo)}" alt="${escHTML(m.name)}" loading="lazy" decoding="async" /></div>
-        <span class="card-price">${escHTML(m.price)}€</span>
+        <span class="card-price">$${escHTML(m.price)}</span>
         <div class="card-meta">
           <h3>${escHTML(m.name)}</h3>
           <p>${escHTML(m.desc)}</p>
