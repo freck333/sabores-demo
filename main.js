@@ -139,7 +139,7 @@
     }, { passive: true });
 
     function tick() {
-      rx += (tx - rx) * 0.18; ry += (ty - ry) * 0.18;
+      rx += (tx - rx) * 0.55; ry += (ty - ry) * 0.55;
       if (ring) ring.style.transform = `translate3d(${rx}px, ${ry}px, 0)`;
       requestAnimationFrame(tick);
     }

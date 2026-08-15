@@ -299,7 +299,22 @@ em { font-style: italic; }
 .footer-bottom a { text-decoration: underline; text-underline-offset: 2px; }
 
 /* =============================================================
-   16. Responsive breakpoints (only these five)
+   16. Watermark
+   ============================================================= */
+.watermark {
+  position: fixed; right: 1rem; bottom: 1rem; z-index: 500;
+  display: inline-flex; align-items: center; gap: .35rem;
+  background: rgba(26,26,26,0.85); color: var(--bg);
+  padding: .55rem 1rem; border-radius: 999px;
+  font-size: .72rem; letter-spacing: .03em;
+  opacity: .8; transition: opacity .3s var(--ease-out), transform .3s var(--ease-out);
+  pointer-events: none;
+}
+.watermark strong { font-weight: 600; color: var(--paper); }
+@media (max-width: 539px) { .watermark { right: .7rem; bottom: .7rem; padding: .45rem .8rem; font-size: .66rem; } }
+
+/* =============================================================
+   17. Responsive breakpoints (only these five)
    ============================================================= */
 @media (min-width: 540px)  { }
 @media (min-width: 720px)  { }
@@ -307,7 +322,7 @@ em { font-style: italic; }
 @media (min-width: 1280px) { .container { padding-inline: 2rem; } }
 
 /* =============================================================
-   17. Reduced motion — only intrusive effects
+   18. Reduced motion — only intrusive effects
    ============================================================= */
 @media (prefers-reduced-motion: reduce) {
   .reserve-box::before { animation: none; }
