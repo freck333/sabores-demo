@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabores · Cocina de temporada</title>
+  <meta name="description" content="Sabores — restaurante de cocina de temporada en Madrid. Carta que cambia con las estaciones, ingredientes locales, reservas online.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap">
+
+  <link rel="preload" as="image" href="assets/img/hero.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css?v=20260815b">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <div class="cursor" data-cursor-root aria-hidden="true">
+    <span class="cursor-dot"></span>
+    <span class="cursor-ring"></span>
+  </div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-brand">Sabores</a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#carta">Carta</a></li>
+        <li><a class="nav-link" href="#nosotros">Nosotros</a></li>
+        <li><a class="nav-link" href="#opiniones">Opiniones</a></li>
+        <li><a class="nav-link" href="#info">Ubicación</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="#reservar">Reservar mesa</a>
+      <button class="nav-burger" data-nav-burger aria-label="Abrir menú" aria-controls="nav-mobile">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-mobile" id="nav-mobile" data-nav-mobile aria-hidden="true">
+    <ul>
+      <li><a href="#carta">Carta</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#info">Ubicación</a></li>
+      <li><a href="#reservar">Reservar</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+
+    <section class="hero" id="hero">
+      <div class="hero-bg"><img src="assets/img/hero.jpg" alt="Interior cálido del restaurante Sabores" fetchpriority="high" loading="eager" decoding="sync"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="kicker">Cocina de temporada · Madrid</p>
+        <h1 class="hero-title reveal" data-split>Una mesa,<br>sin prisa.</h1>
+        <p class="hero-sub">Carta corta, ingredientes de temporada y una cocina que cambia con el calendario, no con la moda.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#reservar">Reservar mesa</a>
+          <a class="btn btn-ghost" href="#carta" style="color:#f4efe6;border-color:rgba(244,239,230,0.35)">Ver la carta</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto" id="nosotros">
+      <div class="container manifesto-grid">
+        <div class="manifesto-num" data-reveal>01</div>
+        <div class="manifesto-text" data-reveal>
+          <p>No perseguimos tendencias. Compramos lo que trae el mercado esa semana y construimos la carta a partir de ahí. Un lugar pequeño que trata la cocina de barrio con la misma seriedad que un sitio grande.</p>
+          <div class="manifesto-values" data-marquee-values></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="carta">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">La carta</p>
+            <h2>Lo más pedido</h2>
+          </div>
+          <a class="btn btn-ghost" href="#reservar">Reservar mesa</a>
+        </div>
+        <div class="bento" data-menu></div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" data-marquee></div>
+    </div>
+
+    <section class="gallery">
+      <div class="container">
+        <p class="kicker">Cocina y sala</p>
+        <h2 style="margin-top:.4rem">Un vistazo por dentro</h2>
+      </div>
+      <div class="container">
+        <div class="gallery-track" data-gallery></div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="opiniones">
+      <div class="container">
+        <p class="kicker">Opiniones</p>
+        <h2 style="margin-top:.4rem;margin-bottom:2.2rem">Lo que dicen quienes vuelven</h2>
+        <div class="testi-grid" data-testimonials></div>
+      </div>
+    </section>
+
+    <section class="info-section" id="info">
+      <div class="container info-grid">
+        <div>
+          <p class="kicker">Horario</p>
+          <h2 style="margin-top:.4rem">Cuándo encontrarnos</h2>
+          <ul class="hours-list" data-hours></ul>
+        </div>
+        <div class="info-address">
+          <p class="kicker">Ubicación</p>
+          <h2 style="margin-top:.4rem">Dónde estamos</h2>
+          <p data-address></p>
+          <p data-phone></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reserve-section" id="reservar">
+      <div class="container">
+        <div class="reserve-box">
+          <div class="reserve-grid">
+            <div>
+              <p class="kicker" style="color:#e0b89a">Reservas</p>
+              <h2>Guárdanos una mesa</h2>
+              <p>Respondemos por email en menos de 24h para confirmar disponibilidad.</p>
+            </div>
+            <div>
+              <form class="cta-form" data-contact-form novalidate>
+                <div class="field">
+                  <input type="text" name="name" id="f-name" required placeholder=" ">
+                  <label for="f-name">Nombre</label>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <input type="email" name="email" id="f-email" required placeholder=" ">
+                    <label for="f-email">Email</label>
+                  </div>
+                  <div class="field">
+                    <input type="tel" name="phone" id="f-phone" required placeholder=" ">
+                    <label for="f-phone">Teléfono</label>
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <input type="date" name="date" id="f-date" required placeholder=" ">
+                    <label for="f-date">Fecha</label>
+                  </div>
+                  <div class="field">
+                    <input type="number" name="guests" id="f-guests" min="1" max="20" required placeholder=" ">
+                    <label for="f-guests">Comensales</label>
+                  </div>
+                </div>
+                <button type="submit" class="cta-submit">
+                  <span class="cta-form-label">Reservar mesa</span>
+                  <span class="cta-form-spinner"></span>
+                </button>
+              </form>
+              <div class="cta-success" data-contact-success aria-hidden="true">
+                <h3>¡Reserva recibida!</h3>
+                <p data-contact-success-msg></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Sabores</p>
+          <p style="margin-top:.5rem;color:var(--ink-mute);font-size:.9rem" data-email></p>
+        </div>
+        <ul class="footer-social" data-social></ul>
+      </div>
+      <div class="container footer-bottom" style="padding-inline:0">
+        <span>© 2026 Sabores. Sitio de demostración.</span>
+        <a href="creditos.html">Créditos fotográficos →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="lib/gsap.min.js"></script>
+  <script defer src="lib/ScrollTrigger.min.js"></script>
+  <script defer src="lib/manifest.js"></script>
+  <script defer src="main.js?v=20260815b"></script>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function () {
+      var b = (window.__BRAND__ || {});
+      var addr = document.querySelector("[data-address]");
+      var phone = document.querySelector("[data-phone]");
+      var email = document.querySelector("[data-email]");
+      if (addr && b.contact) addr.textContent = b.contact.address;
+      if (phone && b.contact) phone.textContent = b.contact.phone;
+      if (email && b.contact) email.textContent = b.contact.email;
+    });
+  </script>
+</body>
+</html>

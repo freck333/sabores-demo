@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "src": "assets/img/hero.jpg",
+    "title": "A cozy cafe interior with wooden chairs and tables arranged neatly on a patterned tile floor. Large windows allow natural light to illuminat",
+    "creator": "Nilo Velez",
+    "creator_url": "https://www.nilovelez.com",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://wordpress.org/photos/photo/78067a4728/",
+    "source": "wordpress"
+  },
+  "dish-1": {
+    "src": "assets/img/dish-1.jpg",
+    "title": "Truffle Burger KCI_1429",
+    "creator": "kurmanstaff",
+    "creator_url": "https://www.flickr.com/photos/62558987@N07",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/62558987@N07/11740458605",
+    "source": "flickr"
+  },
+  "dish-2": {
+    "src": "assets/img/dish-2.jpg",
+    "title": "Salmon pasta",
+    "creator": "WordRidden",
+    "creator_url": "https://www.flickr.com/photos/97844767@N00",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/97844767@N00/173689697",
+    "source": "flickr"
+  },
+  "dish-3": {
+    "src": "assets/img/dish-3.jpg",
+    "title": "Gourmet Food",
+    "creator": "Tim Sullivan",
+    "creator_url": "https://www.secretagencygroup.com",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://stocksnap.io/photo/gourmet-food-AW3QDDIGZP",
+    "source": "stocksnap"
+  },
+  "dish-4": {
+    "src": "assets/img/dish-4.jpg",
+    "title": "A folded, triangular chocolate crêpe, dusted with powdered sugar and sprinkled with chopped pistachios. The crêpe is presented on a white, s",
+    "creator": "Bigul Malayi",
+    "creator_url": "https://wordpress.org/photos/author/mbigul/",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://wordpress.org/photos/photo/69667d7ab1/",
+    "source": "wordpress"
+  },
+  "ingredients": {
+    "src": "assets/img/ingredients.jpg",
+    "title": "North Charleston Farmers Market produce",
+    "creator": "North Charleston",
+    "creator_url": "https://www.flickr.com/photos/36686551@N06",
+    "license": "by-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/36686551@N06/6001859710",
+    "source": "flickr"
+  },
+  "interior": {
+    "src": "assets/img/interior.jpg",
+    "title": "Charlie Palmer's,Reno Chef's Counter",
+    "creator": "ghahnroyal",
+    "creator_url": "https://www.flickr.com/photos/11615637@N05",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/11615637@N05/2506697968",
+    "source": "flickr"
+  },
+  "chef-hands": {
+    "src": "assets/img/chef-hands.jpg",
+    "title": "Frying ground beef burger",
+    "creator": "Jakub Kapusnak",
+    "creator_url": null,
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://www.rawpixel.com/image/447880/cooking-meatballs",
+    "source": "rawpixel"
+  }
+}

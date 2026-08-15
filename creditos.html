@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Créditos fotográficos · Sabores</title>
+  <link rel="stylesheet" href="styles.css?v=20260815b">
+  <style>
+    .page-credits main { max-width: 760px; margin-inline: auto; padding: 8rem 1.4rem 4rem; }
+    .credits-list { list-style: none; padding: 0; margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+    .credits-list li { padding: 1rem; border: 1px solid var(--line); border-radius: 12px; font-size: .9rem; }
+    .credits-list a { text-decoration: underline; text-underline-offset: 2px; }
+    .back-link { display: inline-block; margin-bottom: 1rem; font-size: .9rem; }
+  </style>
+</head>
+<body class="page-credits">
+  <main>
+    <a class="back-link" href="index.html">← Volver</a>
+    <h1>Créditos fotográficos</h1>
+    <p style="margin-top:.6rem;color:var(--ink-mute)">Imágenes bajo licencias Creative Commons vía <a href="https://openverse.org" target="_blank" rel="noopener">Openverse</a>.</p>
+    <ul class="credits-list" data-credits></ul>
+  </main>
+  <script defer src="lib/credits-render.js?v=20260815b"></script>
+</body>
+</html>
