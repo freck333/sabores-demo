@@ -94,12 +94,13 @@ em { font-style: italic; }
 /* =============================================================
    5. Cursor
    ============================================================= */
-.cursor { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999; display: none; mix-blend-mode: difference; opacity: 0; transition: opacity .25s var(--ease-out); }
+.cursor { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999; display: none; opacity: 0; transition: opacity .25s var(--ease-out); }
 .cursor.is-ready { opacity: 1; }
 @media (hover: hover) and (pointer: fine) { .cursor { display: block; } }
 .cursor-dot, .cursor-ring { position: fixed; top: 0; left: 0; pointer-events: none; will-change: transform; }
-.cursor-dot { width: 5px; height: 5px; margin: -2.5px; background: var(--paper); border-radius: 50%; }
-.cursor-ring { width: 32px; height: 32px; margin: -16px; border: 1px solid var(--paper); border-radius: 50%; transition: width .35s var(--ease-out), height .35s var(--ease-out), margin .35s var(--ease-out); }
+/* Dark fill + light halo reads on both cream sections and dark photos — no mix-blend-mode (it forces a full-screen recomposite every frame and was the cause of the cursor-tracking lag). */
+.cursor-dot { width: 5px; height: 5px; margin: -2.5px; background: var(--ink); border-radius: 50%; box-shadow: 0 0 0 1.5px rgba(244,239,230,0.85); }
+.cursor-ring { width: 32px; height: 32px; margin: -16px; border: 1.5px solid var(--ink); border-radius: 50%; box-shadow: 0 0 0 1px rgba(244,239,230,0.7); transition: width .35s var(--ease-out), height .35s var(--ease-out), margin .35s var(--ease-out); }
 .cursor.is-interactive .cursor-ring { width: 48px; height: 48px; margin: -24px; }
 .has-cursor, .has-cursor a, .has-cursor button { cursor: none; }
 
